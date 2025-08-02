@@ -19,15 +19,4 @@ Bienvenido al repositorio del curso. Aquí encontrarás los resúmenes y materia
 ## 📎 Otros recursos
 
 - [README general](README.md)
-- [Planificación mensual](tareas_agosto_github_project.md)
 
----
-
-> Todos los archivos están escritos en formato Markdown y pueden ser visualizados directamente en GitHub o VS Code.
-"""
-
-index_path = "/mnt/data/index.md"
-with open(index_path, "w", encoding="utf-8") as f:
-    f.write(index_md)
-
-index_path
