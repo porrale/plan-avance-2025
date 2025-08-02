@@ -1,4 +1,4 @@
-index_md = """# 📘 Índice de Unidades - Curso de Diseño Digital Avanzado
+# 📘 Índice de Unidades - Curso de Diseño Digital Avanzado
 
 Bienvenido al repositorio del curso. Aquí encontrarás los resúmenes y materiales organizados por unidad.
 
