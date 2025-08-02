@@ -7,7 +7,7 @@ Bienvenido al repositorio del curso. Aquí encontrarás los resúmenes y materia
 ## 🗂️ Unidades
 
 - [Resumen - Unidad 0 - Introducción y Presentación del Curso](resumen_0.md)
-- [presentación - Unidad 0 ()]
+- [presentación - Unidad 0 (DDA2025\Presentaciones\unit00.pdf)]
 - [Unidad 1 - Introducción a Verilog](unidad_1.md)
 - [Unidad 2 - Implementación de Sistemas Digitales](unidad_2.md)
 - [Unidad 3 - Mapeo de Arquitecturas Dedicadas](unidad_3.md)
