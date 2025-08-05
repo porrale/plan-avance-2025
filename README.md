@@ -19,10 +19,13 @@ Este repositorio contiene la planificación detallada de las tareas semanales co
 ## 🛠️ Proyectos involucrados
 
 - [x] Curso de Posgrado: Diseño Digital Avanzado (FPGA / Verilog)
-- [x] Proyecto de DSP en Raspberry Pi Pico 2
+- [x] Proyecto de DSP en Raspberry Pi Pico 2 (https://github.com/utn-fra-lse/embedded-dsp-tutorial)
 - [x] Proyecto Estimulador para Implante Coclear
 - [x] Ciencia de Datos (libros y ejercicios)
-- [x] Proyecto Efecto Fotoeléctrico
+- [x] Proyecto Efecto Fotoeléctrico (https://github.com/utn-fra-lse/efecto-fotoelectrico)
+- [x] Libro de FE ()
+
+
 
 ---
 
