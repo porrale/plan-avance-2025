@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+\title{\textbf{Propuesta de Tesis Doctoral (Enfoque Aplicado)}\\
+Estimación adaptativa de la impedancia eléctrica para el monitoreo de hidratación en adultos mayores mediante fantomas simulados}
+\author{Autor: [Tu Nombre] \\
+Director: [Nombre del Director] \\
+Institución: [Universidad / Facultad] \\
+Año: 2025}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+La deshidratación en adultos mayores constituye un problema clínico frecuente, subdiagnosticado y con consecuencias potencialmente graves. Este proyecto de tesis doctoral propone el desarrollo de un sistema de estimación adaptativa de impedancia eléctrica orientado al monitoreo del estado de hidratación. El enfoque se basa en el uso de filtros digitales (LMS, RLS y Kalman) aplicados a mediciones de bioimpedancia multifrecuencia. Para validar la propuesta, se diseñarán y construirán fantomas experimentales que simulen tejidos humanos con distintos niveles de hidratación. El objetivo final es desarrollar un sistema confiable y portátil que pueda transferirse al ámbito clínico, contribuyendo a la prevención de complicaciones en adultos mayores.
+\end{abstract}
+
+\section{Introducción}
+La deshidratación en adultos mayores es una condición prevalente y subdiagnosticada que incrementa el riesgo de hospitalizaciones, insuficiencia renal y deterioro cognitivo. Actualmente, las herramientas clínicas disponibles (como exámenes de laboratorio o evaluaciones clínicas) presentan limitaciones en cuanto a rapidez, accesibilidad y aplicabilidad en contextos comunitarios o de atención primaria.
+
+La bioimpedancia eléctrica (BIA) se presenta como una técnica no invasiva, rápida y económica para estimar parámetros hídricos corporales. Sin embargo, la precisión de los métodos convencionales puede verse comprometida por variaciones fisiológicas, ruido de medición y limitaciones de los algoritmos tradicionales de ajuste de modelos.
+
+Este trabajo propone el uso de filtros adaptativos aplicados a señales de bioimpedancia multifrecuencia con el fin de mejorar la estimación de parámetros eléctricos y, por extensión, el monitoreo del estado de hidratación en adultos mayores.
+
+\section{Antecedentes y Estado del Arte}
+\subsection{Bioimpedancia y estado de hidratación}
+La BIA permite estimar la \textit{agua corporal total (TBW)}, el \textit{agua intracelular (ICW)} y el \textit{agua extracelular (ECW)}. En adultos mayores, el incremento relativo de ECW debido al envejecimiento y enfermedades crónicas puede detectarse a través de variaciones en la impedancia eléctrica.
+
+\subsection{Modelos eléctricos}
+El modelo de Cole-Cole es el más utilizado para representar la respuesta de los tejidos biológicos. Sus parámetros principales incluyen:
+\begin{itemize}
+    \item $R_e$: resistencia extracelular,
+    \item $R_i$: resistencia intracelular,
+    \item $C_m$: capacitancia de membrana,
+    \item $\alpha$: parámetro de dispersión.
+\end{itemize}
+Estos parámetros permiten establecer correlaciones entre las propiedades eléctricas y el estado de hidratación.
+
+\subsection{Filtros adaptativos en bioingeniería}
+La aplicación de filtros adaptativos en bioseñales ha mostrado resultados prometedores en estimación de parámetros fisiológicos. En particular:
+\begin{itemize}
+    \item LMS/NLMS: algoritmos simples y de baja complejidad, adecuados para sistemas portátiles.
+    \item RLS: mayor precisión en el seguimiento de cambios fisiológicos.
+    \item Kalman: estimación robusta en sistemas dinámicos con presencia de ruido.
+\end{itemize}
+
+\section{Hipótesis de Trabajo}
+La utilización de filtros adaptativos aplicados a mediciones de bioimpedancia multifrecuencia permite mejorar la estimación de parámetros eléctricos asociados al estado hídrico, facilitando el monitoreo confiable y portátil de hidratación en adultos mayores.
+
+\section{Objetivos}
+\subsection{Objetivo General}
+Desarrollar y validar un sistema de estimación adaptativa de impedancia eléctrica para el monitoreo del estado de hidratación en adultos mayores mediante fantomas simulados.
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Diseñar y caracterizar fantomas que simulen tejidos con distintos niveles de hidratación.
+    \item Implementar un sistema de medición de bioimpedancia multifrecuencia.
+    \item Aplicar filtros adaptativos (LMS, RLS y Kalman) para la estimación de parámetros eléctricos.
+    \item Validar el sistema mediante simulaciones y mediciones experimentales.
+    \item Evaluar la viabilidad de aplicación clínica en adultos mayores.
+\end{enumerate}
+
+\section{Metodología}
+\subsection{Diseño de fantomas}
+Se emplearán geles de agar y gelatina con distintas concentraciones de NaCl y KCl, variando su conductividad eléctrica para simular diferentes estados de hidratación.
+
+\subsection{Sistema de medición}
+Se desarrollará un prototipo de medición de bioimpedancia multifrecuencia (rango 10 kHz -- 1 MHz), incluyendo la electrónica de adquisición y el procesamiento digital.
+
+\subsection{Procesamiento de señales}
+Los datos serán procesados mediante:
+\begin{itemize}
+    \item Algoritmos LMS y NLMS para estimaciones rápidas.
+    \item Algoritmo RLS para seguimiento de cambios fisiológicos.
+    \item Filtro de Kalman para estimación robusta en presencia de ruido.
+\end{itemize}
+
+\subsection{Validación}
+Los resultados se contrastarán con simulaciones numéricas y mediciones experimentales en fantomas, evaluando precisión, estabilidad y robustez.
+
+\section{Plan de Trabajo Tentativo}
+\begin{enumerate}
+    \item Revisión bibliográfica (6 meses).
+    \item Diseño y construcción de fantomas (6 meses).
+    \item Implementación del sistema de medición (12 meses).
+    \item Desarrollo e implementación de algoritmos adaptativos (12 meses).
+    \item Validación experimental (12 meses).
+    \item Redacción y defensa de tesis (6 meses).
+\end{enumerate}
+
+\section{Impacto Esperado}
+Este proyecto contribuirá al desarrollo de sistemas portátiles de monitoreo de hidratación en adultos mayores, con potencial aplicación en geriatría, atención primaria y dispositivos de salud comunitarios. El impacto esperado incluye:
+\begin{itemize}
+    \item Mejora en la detección temprana de deshidratación.
+    \item Disminución de hospitalizaciones y complicaciones.
+    \item Transferencia tecnológica hacia sistemas de monitoreo clínico.
+\end{itemize}
+
+\section{Bibliografía Seleccionada}
+\begin{itemize}
+    \item Grimnes, S., \& Martinsen, Ø.G. (2015). \textit{Bioimpedance and Bioelectricity Basics}.
+    \item Kyle, U.G. et al. (2004). Bioelectrical impedance analysis in clinical practice: implications for hydration status assessment. \textit{Clinical Nutrition}, 23(6), 1226–1243.
+    \item Cole, K. S., \& Cole, R. H. (1941). Dispersion and absorption in dielectrics I. Alternating current characteristics. \textit{The Journal of Chemical Physics}, 9(4), 341–351.
+    \item Haykin, S. (2002). \textit{Adaptive Filter Theory}.
+    \item IEEE Xplore: ``adaptive filtering hydration monitoring bioimpedance''.
+    \item PubMed: ``bioelectrical impedance hydration elderly''.
+\end{itemize}
+
+\end{document}
